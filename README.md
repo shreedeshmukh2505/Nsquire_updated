@@ -438,25 +438,42 @@ Predicted 50% → Actual 47-53%
 
 ## Screenshots
 
-### 1. AI Chatbot
-![Chatbot Screenshot](docs/screenshots/chatbot.png)
+
+### 1. Launch Page
+![Launch Page](Screenshots/Launch.jpg)
+*The landing page of the website.*
+
+### 2. AI Chatbot
+![Chatbot Screenshot](Screenshots/Chatbot.jpg)
 *Natural language queries with Hinglish support*
 
-### 2. Smart Rank Predictor with ML
-![Rank Predictor Screenshot](docs/screenshots/rank-predictor.png)
+### 3. College Predictor
+![College Predictor](Screenshots/College%20predict.jpg)
+*Users can input their rank and category to get predictions.*
+
+### 4. College Prediction Results
+![College Prediction Results](Screenshots/College_predict_result.jpg)
 *ML-powered admission probability and recommendations*
 
-### 3. ML Analysis Breakdown
-![ML Analysis Screenshot](docs/screenshots/ml-analysis.png)
-*Top AI factors, probability bars, and 2025 forecasts*
+### 5. College Comparison
+![Comparison Tool](Screenshots/Compare.jpg)
+*Tool to compare different colleges side-by-side.*
 
-### 4. College Comparison
-![Comparison Screenshot](docs/screenshots/comparison.png)
+### 6. College Comparison Results
+![Comparison Results](Screenshots/Compare_results.jpg)
 *Side-by-side comparison of colleges*
 
-### 5. Advanced Search
-![Search Screenshot](docs/screenshots/search.png)
-*Filter and search colleges by multiple criteria*
+### 7. Find College
+![Find College](Screenshots/Find_college.jpg)
+*Page to search for colleges.*
+
+### 8. Find College Results
+![Find College Results](Screenshots/Find_result.jpg)
+*Results of the college search.*
+
+### 9. Featured College
+![Featured College](Screenshots/Featured_college.jpg)
+*A featured college on the website.*
 
 ---
 
