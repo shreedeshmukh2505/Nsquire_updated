@@ -1,0 +1,353 @@
+/* Comparison Results */
+.comparison-results {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.results-header {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.results-header h2 {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.results-count {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Table Wrapper */
+.comparison-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 0.95rem;
+}
+
+.comparison-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.comparison-table thead th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.row-header {
+  min-width: 200px;
+  font-size: 1rem;
+}
+
+.college-column {
+  min-width: 250px;
+  text-align: center !important;
+}
+
+.college-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.college-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.college-location {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.remove-college-btn {
+  margin-top: 8px;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-college-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Table Body */
+.comparison-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.comparison-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.comparison-table tbody td {
+  padding: 16px 15px;
+  vertical-align: top;
+}
+
+.row-label {
+  font-weight: 600;
+  color: #374151;
+  background: #f9fafb;
+}
+
+/* Section Headers */
+.section-header td {
+  background: #f3f4f6;
+  padding: 14px 15px !important;
+  font-size: 0.95rem;
+  color: #1f2937;
+  border-top: 2px solid #e5e7eb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Highlights */
+.highlight {
+  color: #059669;
+  font-weight: 600;
+}
+
+.highlight-cutoff {
+  color: #0891b2;
+  font-weight: 600;
+}
+
+/* Badges */
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.branch-count {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.toggle-branches-btn {
+  display: block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #ede9fe;
+  border: 1px solid #c4b5fd;
+  border-radius: 6px;
+  color: #5b21b6;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-branches-btn:hover {
+  background: #ddd6fe;
+}
+
+/* Branch Details */
+.branch-details-cell {
+  padding: 20px !important;
+}
+
+.branches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.branch-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.branch-name {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.branch-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.more-branches {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+  padding: 8px;
+  font-style: italic;
+}
+
+/* Facilities */
+.facilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.facility-tag {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Export Section */
+.export-section {
+  margin-top: 25px;
+  text-align: center;
+  padding: 20px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.export-hint {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Scrollbar Styling */
+.comparison-table-wrapper::-webkit-scrollbar,
+.branches-list::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.comparison-table-wrapper::-webkit-scrollbar-track,
+.branches-list::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+.comparison-table-wrapper::-webkit-scrollbar-thumb,
+.branches-list::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+
+.comparison-table-wrapper::-webkit-scrollbar-thumb:hover,
+.branches-list::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .comparison-results {
+    padding: 20px;
+  }
+
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+
+  .college-column {
+    min-width: 200px;
+  }
+
+  .row-header {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison-results {
+    padding: 15px;
+  }
+
+  .results-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .comparison-table {
+    font-size: 0.8rem;
+  }
+
+  .comparison-table thead th,
+  .comparison-table tbody td {
+    padding: 12px 10px;
+  }
+
+  .college-name {
+    font-size: 0.95rem;
+  }
+
+  .college-location {
+    font-size: 0.75rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .comparison-tool-container {
+    background: white;
+  }
+
+  .comparison-header,
+  .selector-section,
+  .export-section {
+    display: none;
+  }
+
+  .comparison-results {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+
+  .remove-college-btn,
+  .toggle-branches-btn {
+    display: none;
+  }
+
+  .comparison-table {
+    page-break-inside: avoid;
+  }
+}

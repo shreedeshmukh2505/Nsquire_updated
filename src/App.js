@@ -5,6 +5,9 @@ import Chatbot from "./components/Chatbot";
 import About from "./components/About";
 import Features from "./components/Features";
 import Contact from "./components/Contact";
+import ComparisonTool from "./components/ComparisonTool";
+import CollegeSearch from "./components/CollegeSearch";
+import RankPredictor from "./components/RankPredictor";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
           <Route path="features" element={<Features />} />
           <Route path="contact" element={<Contact />} />
           <Route path="chat" element={<Chatbot />} />
+          <Route path="compare" element={<ComparisonTool />} />
+          <Route path="search" element={<CollegeSearch />} />
+          <Route path="predict" element={<RankPredictor />} />
         </Route>
       </Routes>
     </Router>

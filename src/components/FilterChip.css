@@ -1,0 +1,63 @@
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  animation: chipIn 0.3s ease-out;
+  box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+  transition: all 0.2s ease;
+}
+
+.filter-chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4);
+}
+
+.filter-chip-label {
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.filter-chip-value {
+  font-weight: 500;
+}
+
+.filter-chip-remove {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.filter-chip-remove:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.filter-chip-remove:active {
+  transform: scale(0.95);
+}
+
+@keyframes chipIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
