@@ -1,0 +1,17 @@
+# Nixpacks configuration for Railway deployment
+# This app requires both Node.js (for React build) and Python (for Flask backend)
+
+[phases.setup]
+nixPkgs = ["python311", "nodejs_18", "npm-8_x"]
+
+[phases.install]
+cmds = [
+  "npm ci",
+  "pip install -r requirements.txt"
+]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "python3 EDI_project_sql.py"
