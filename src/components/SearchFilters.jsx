@@ -24,7 +24,7 @@ const SearchFilters = ({ onFilterChange, filterOptions }) => {
       sort: sortBy
     };
     onFilterChange(filters);
-  }, [searchQuery, selectedLocations, minFee, maxFee, minRating, selectedBranch, sortBy]);
+  }, [searchQuery, selectedLocations, minFee, maxFee, minRating, selectedBranch, sortBy, onFilterChange]);
 
   const handleLocationToggle = (location) => {
     setSelectedLocations(prev =>

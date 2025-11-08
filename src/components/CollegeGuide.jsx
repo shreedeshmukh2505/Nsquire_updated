@@ -14,7 +14,6 @@ import VITPuneImage from './VIT-Pune.webp';
 import VJTIImage from './VJTI.jpg';
 import COEPImage from './COEP-Pune-1.webp';
 import PICTImage from './PICT.jpg';
-import PCCOEImage from './PCCOE.jpeg';
 import RamdeobabaImage from './Ramdeobaba.jpeg';
 import SPCEImage from './SPCE.jpeg';
 import WalchandImage from './Walchand.jpeg';

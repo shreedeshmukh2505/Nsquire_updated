@@ -86,6 +86,10 @@ function Chatbot() {
     return () => document.head.removeChild(styleSheet);
   }, []);
 
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
   // Create a sanitized HTML render function
   const createMarkup = (html) => {
     return { __html: html };

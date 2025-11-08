@@ -1,24 +1,9 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { MessageCircle, Send, Paperclip, Smile } from 'lucide-react';
+import React, { useRef, useEffect } from 'react';
+import { MessageCircle } from 'lucide-react';
 import Chatbot from './Chatbot';
 
 const ChatPage = () => {
   const chatContainerRef = useRef(null);
-  const [inputValue, setInputValue] = useState('');
-
-  const handleSubmit = () => {
-    // Call Chatbot component to handle the user's input
-    // and update the chat history
-    if (inputValue.trim() !== '') {
-      // Clear the input field
-      setInputValue('');
-
-      // Scroll to the bottom of the chat container
-      if (chatContainerRef.current) {
-        chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
-      }
-    }
-  };
 
   useEffect(() => {
     // Scroll to the bottom of the chat container when the component mounts

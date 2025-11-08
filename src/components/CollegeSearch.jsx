@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import SearchFilters from './SearchFilters';
 import CollegeGrid from './CollegeGrid';
@@ -41,12 +41,7 @@ const CollegeSearch = () => {
     fetchFilterOptions();
   }, []);
 
-  // Fetch colleges when filters change
-  useEffect(() => {
-    fetchColleges();
-  }, [currentFilters, pagination.page]);
-
-  const fetchColleges = async () => {
+  const fetchColleges = useCallback(async () => {
     setLoading(true);
     setError(null);
 
@@ -80,7 +75,12 @@ const CollegeSearch = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [currentFilters, pagination.page, pagination.per_page]);
+
+  // Fetch colleges when filters change
+  useEffect(() => {
+    fetchColleges();
+  }, [fetchColleges]);
 
   const handleFilterChange = (filters) => {
     setCurrentFilters(filters);
