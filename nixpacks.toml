@@ -2,13 +2,12 @@
 # This app requires both Node.js (for React build) and Python (for Flask backend)
 
 [phases.setup]
-nixPkgs = ["python311", "nodejs_18", "npm-8_x"]
+nixPkgs = ["python311", "python311Packages.pip", "nodejs_18", "npm-8_x"]
 
 [phases.install]
 cmds = [
   "npm ci",
-  "python3 -m pip install --upgrade pip",
-  "python3 -m pip install -r requirements.txt"
+  "pip install -r requirements.txt"
 ]
 
 [phases.build]
