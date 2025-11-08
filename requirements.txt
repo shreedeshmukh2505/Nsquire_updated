@@ -4,9 +4,7 @@ SQLAlchemy==2.0.23
 cohere==4.37
 fuzzywuzzy==0.18.0
 python-Levenshtein==0.23.0
-argostranslate==1.9.1
 python-dotenv==1.0.0
-PyPDF2==3.0.1
 scikit-learn==1.4.2
 numpy==1.26.4
 pandas==2.2.3

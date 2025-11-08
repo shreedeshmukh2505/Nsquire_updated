@@ -8,7 +8,7 @@ import json
 from fuzzywuzzy import process, fuzz
 from typing import Dict, List
 import cohere
-from argostranslate import package, translate
+# from argostranslate import package, translate  # Removed - causes slow startup
 from dotenv import load_dotenv
 import os
 from flask import Flask, request, jsonify
@@ -188,25 +188,14 @@ def detect_language(sentence):
 
 
 def setup_translation():
-    """Setup translation languages for Argos Translate"""
-    package.update_package_index()
-    available_packages = package.get_available_packages()
-    for pkg in available_packages:
-        if pkg.from_code == 'en' and pkg.to_code == 'hi':
-            package.install_from_path(pkg.download())
+    """Setup translation languages for Argos Translate - DISABLED for faster startup"""
+    pass  # Translation disabled to improve startup time
 
 
 def translate_text(from_lang, to_lang, text):
-    """Translate text between languages"""
-    installed_languages = translate.get_installed_languages()
-    from_language = next((lang for lang in installed_languages if lang.code == from_lang), None)
-    to_language = next((lang for lang in installed_languages if lang.code == to_lang), None)
-
-    if from_language and to_language:
-        translation = from_language.get_translation(to_language)
-        return translation.translate(text)
-    else:
-        return "Translation service is not available."
+    """Translate text between languages - DISABLED, returns original text"""
+    # Translation disabled for faster startup - just return original English text
+    return text
 
 
 def cohere_understand_query_eligibility(user_query):
