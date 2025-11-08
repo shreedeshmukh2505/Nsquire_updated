@@ -56,7 +56,7 @@ const RankPredictor = () => {
       <div className="rank-predictor-container">
         <div className="rank-predictor-header">
           <Target size={36} className="header-icon" />
-          <h1>College Rank Predictor</h1>
+          <h1>College Predictor</h1>
           <p>Find out which colleges you're eligible for based on your MHT-CET rank</p>
         </div>
 
@@ -162,9 +162,9 @@ const RankPredictor = () => {
         {!loading && !predictions && !error && (
           <div className="instructions-card">
             <Target size={48} className="instructions-icon" />
-            <h3>How to Use the Rank Predictor</h3>
+            <h3>How to Use the College Predictor</h3>
             <ol>
-              <li><strong>Select your category</strong> from the options above (GOPEN, LOPEN, TFWS, etc.)</li>
+              <li><strong>Select your category</strong> from the options above (GOPEN or LOPEN)</li>
               <li><strong>Enter your MHT-CET rank</strong> using the slider or input box</li>
               <li><strong>Click "Predict"</strong> to see which colleges you're eligible for</li>
               <li><strong>Review the results</strong> with probability indicators:

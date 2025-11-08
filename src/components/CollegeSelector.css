@@ -21,11 +21,12 @@
   font-size: 1.3rem;
   color: #9ca3af;
   pointer-events: none;
+  z-index: 1;
 }
 
 .search-input {
   width: 100%;
-  padding: 16px 50px 16px 55px;
+  padding: 16px 50px 16px 60px;
   font-size: 1rem;
   border: 2px solid #e5e7eb;
   border-radius: 12px;
@@ -236,7 +237,7 @@
 @media (max-width: 768px) {
   .search-input {
     font-size: 0.9rem;
-    padding: 14px 45px 14px 50px;
+    padding: 14px 45px 14px 55px;
   }
 
   .college-chip {

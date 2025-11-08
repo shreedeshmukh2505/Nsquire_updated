@@ -5,16 +5,7 @@ import './CategorySelector.css';
 const CategorySelector = ({ selectedCategory, onCategoryChange }) => {
   const categories = [
     { value: 'GOPEN', label: 'General Open', description: 'General Category - Open Merit' },
-    { value: 'LOPEN', label: 'Ladies Open', description: 'Ladies - Open Merit' },
-    { value: 'GOBCH', label: 'General OBC', description: 'General - Other Backward Class' },
-    { value: 'LOBCH', label: 'Ladies OBC', description: 'Ladies - Other Backward Class' },
-    { value: 'GSCH', label: 'General SC', description: 'General - Scheduled Caste' },
-    { value: 'LSCH', label: 'Ladies SC', description: 'Ladies - Scheduled Caste' },
-    { value: 'GSTH', label: 'General ST', description: 'General - Scheduled Tribe' },
-    { value: 'GNT1H', label: 'General NT1', description: 'General - Nomadic Tribe 1' },
-    { value: 'GNT2H', label: 'General NT2', description: 'General - Nomadic Tribe 2' },
-    { value: 'GNT3H', label: 'General NT3', description: 'General - Nomadic Tribe 3' },
-    { value: 'GVJH', label: 'General VJ', description: 'General - Vimukta Jati' }
+    { value: 'LOPEN', label: 'Ladies Open', description: 'Ladies - Open Merit' }
   ];
 
   return (
