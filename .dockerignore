@@ -1,21 +1,54 @@
-node_modules
-build
-.git
-.gitignore
-README.md
+# Exclude ALL frontend/development files to minimize image size
+node_modules/
+build/
+src/
+public/
+package.json
+package-lock.json
 *.md
-.env
-.env.local
-.env.production
-__pycache__
+README.md
+DEPLOYMENT_GUIDE.md
+RAILWAY_DEPLOYMENT_STEPS.md
+QUICK_DEPLOY_REFERENCE.md
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Python cache
+__pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
-.pytest_cache
+*.so
+*.egg-info/
+dist/
+.pytest_cache/
 .coverage
-htmlcov
-dist
-*.egg-info
-.vscode
-.idea
+htmlcov/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.example
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Unused Python files (keep only EDI_project_sql.py, models.py, ml_models.py, colleges.db)
+EDI_project.py
+migrate_to_sql.py
+pdf_parser.py
+pdf_to_sql_migrator.py
+Test.py
+
+# Screenshots and documentation
+Screenshots/
+interview-prep/
