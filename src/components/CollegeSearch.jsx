@@ -82,12 +82,12 @@ const CollegeSearch = () => {
     fetchColleges();
   }, [fetchColleges]);
 
-  const handleFilterChange = (filters) => {
+  const handleFilterChange = useCallback((filters) => {
     setCurrentFilters(filters);
     setPagination(prev => ({ ...prev, page: 1 })); // Reset to page 1 on filter change
-  };
+  }, []);
 
-  const handleRemoveFilter = (filterType) => {
+  const handleRemoveFilter = useCallback((filterType) => {
     setCurrentFilters(prev => {
       const updated = { ...prev };
       if (filterType === 'location') {
@@ -100,14 +100,14 @@ const CollegeSearch = () => {
       }
       return updated;
     });
-  };
+  }, []);
 
-  const handleRemoveLocation = (location) => {
+  const handleRemoveLocation = useCallback((location) => {
     setCurrentFilters(prev => ({
       ...prev,
       location: prev.location.filter(loc => loc !== location)
     }));
-  };
+  }, []);
 
   const getActiveFilters = () => {
     const active = [];
@@ -140,12 +140,12 @@ const CollegeSearch = () => {
     return active;
   };
 
-  const handlePageChange = (newPage) => {
+  const handlePageChange = useCallback((newPage) => {
     if (newPage >= 1 && newPage <= pagination.total_pages) {
       setPagination(prev => ({ ...prev, page: newPage }));
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  };
+  }, [pagination.total_pages]);
 
   const activeFilters = getActiveFilters();
 
