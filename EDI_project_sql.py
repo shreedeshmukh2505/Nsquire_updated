@@ -1058,11 +1058,19 @@ def predict_colleges():
 
 
 # Ensure CORS is configured correctly
+# In production, you might want to restrict origins to your Vercel domain
+# For now, allow all origins (you can restrict later)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 if __name__ == '__main__':
     print("Starting NSquire Chatbot with SQL Database...")
     print("Database: colleges.db")
-    print("Server: http://localhost:5001")
-    app.run(debug=True, host='0.0.0.0', port=5001)
+
+    # Get port from environment variable (Railway provides this)
+    port = int(os.environ.get('PORT', 5001))
+    print(f"Server: http://0.0.0.0:{port}")
+
+    # Set debug=False for production
+    is_production = os.environ.get('FLASK_ENV') == 'production'
+    app.run(debug=not is_production, host='0.0.0.0', port=port)

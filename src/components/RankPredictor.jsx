@@ -5,8 +5,7 @@ import RankSlider from './RankSlider';
 import EligibilityCard from './EligibilityCard';
 import { Target, AlertCircle, CheckCircle, TrendingUp } from 'lucide-react';
 import './RankPredictor.css';
-
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+import { API_BASE_URL } from '../config';
 
 const RankPredictor = () => {
   const [rank, setRank] = useState(10000);

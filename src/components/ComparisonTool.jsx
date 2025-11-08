@@ -3,8 +3,7 @@ import axios from 'axios';
 import CollegeSelector from './CollegeSelector';
 import ComparisonTable from './ComparisonTable';
 import './ComparisonTool.css';
-
-const API_BASE_URL = 'http://localhost:5001';
+import { API_BASE_URL } from '../config';
 
 const ComparisonTool = () => {
   const [selectedColleges, setSelectedColleges] = useState([]);

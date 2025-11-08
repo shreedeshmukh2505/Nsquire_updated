@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './CollegeSelector.css';
-
-const API_BASE_URL = 'http://localhost:5001';
+import { API_BASE_URL } from '../config';
 
 const CollegeSelector = ({ allColleges, selectedColleges, onCollegeSelect, onRemoveCollege }) => {
   const [searchQuery, setSearchQuery] = useState('');

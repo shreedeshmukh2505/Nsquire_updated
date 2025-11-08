@@ -5,8 +5,7 @@ import CollegeGrid from './CollegeGrid';
 import FilterChip from './FilterChip';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './CollegeSearch.css';
-
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+import { API_BASE_URL } from '../config';
 
 const CollegeSearch = () => {
   const [colleges, setColleges] = useState([]);
