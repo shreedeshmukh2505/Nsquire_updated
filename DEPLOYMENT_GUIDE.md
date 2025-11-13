@@ -4,15 +4,15 @@ Your code is ready for deployment! Follow these simple steps:
 
 ---
 
-## ✅ COMPLETED AUTOMATICALLY
+## ✅ Steps:
 
-- [x] Created `requirements.txt` for Python dependencies
-- [x] Created `railway.toml` for Railway configuration
-- [x] Updated Flask app for production (PORT configuration)
-- [x] Created centralized API config (`src/config.js`)
-- [x] Updated all React components to use environment variables
-- [x] Pushed code to GitHub: https://github.com/shreedeshmukh2505/Nsquire_updated
-- [x] Initiated Railway deployment
+- [x] Create `requirements.txt` for Python dependencies
+- [x] Create `railway.toml` for Railway configuration
+- [x] Update Flask app for production (PORT configuration)
+- [x] Create centralized API config (`src/config.js`)
+- [x] Update all React components to use environment variables
+- [x] Push code to GitHub: https://github.com/shreedeshmukh2505/Nsquire_updated
+- [x] Initiate Railway deployment
 
 ---
 
@@ -30,7 +30,7 @@ Click on **"Variables"** tab and add:
 
 ```
 Variable Name: COHERE_API_KEY
-Value: TsY1cWlAAL00usoIgNEeHLxkiYO9vzSSwzZQKppW
+Value: YOUR_API_KEY
 ```
 
 ```
@@ -64,7 +64,7 @@ Visit: **https://vercel.com/new**
 ### 2.2 Import Git Repository
 - Click **"Add New..."** → **"Project"**
 - Choose **"Import Git Repository"**
-- Select: **shreedeshmukh2505/Nsquire_updated**
+- Select: **username/NSquire**
 - Click **"Import"**
 
 ### 2.3 Configure Project
@@ -240,7 +240,7 @@ Once complete, you'll have:
 `https://__________.up.railway.app`
 
 **GitHub Repository:**
-https://github.com/shreedeshmukh2505/Nsquire_updated
+https://github.com/username/Nsquire_updated
 
 ---
 
